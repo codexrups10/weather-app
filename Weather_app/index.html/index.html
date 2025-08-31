@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Weather Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+ <!-- Styles -->
+  <link rel="stylesheet" href="../style.css/style.css" />
+  <script src="../java.script/script.js"></script>
+</head>
+<body>
+  <div class="video-background">
+  <video autoplay muted loop playsinline>
+    <source src="../images/background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+  <div class="app">
+
+    <!-- HEADER -->
+    <header>
+      <h1>
+        <img src="../images/logo.jpg" alt="Logo" class="logo">
+        Skynic</h1>
+      <h3>🌤 Smart Weather</h3>
+      <p>Get live updates with forecasts, hourly trends & more.</p>
+    </header>
+
+    <!-- SEARCH BAR -->
+    <section class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name...">
+      <button id="btnSearch">🔍 Search</button>
+      <button id="btnLocation">📍 Use My Location</button>
+      <button id="unitToggle">°C</button>
+    </section>
+
+    <!-- CURRENT WEATHER -->
+    <section id="weatherResult" class="hidden card">
+      <h2>City Name</h2>
+      <i class="wi wi-day-sunny weather-icon"></i>
+      <h3>DESCRIPTION</h3>
+      <p class="temperature">🌡 Temp: 00°C (Feels like: 00°C)</p>
+
+      <!-- EXTRA INFO -->
+      <div class="weather-details">
+        <div><i class="wi wi-humidity"></i> Humidity: --%</div>
+        <div><i class="wi wi-strong-wind"></i> Wind: --</div>
+        <div><i class="wi wi-barometer"></i> Pressure: -- hPa</div>
+        <div><i class="wi wi-day-sunny"></i> Sunrise: --</div>
+        <div><i class="wi wi-night-clear"></i> Sunset: --</div>
+        <div><i class="wi wi-dust"></i> Visibility: -- km</div>
+      </div>
+    </section>
+
+    <!-- HOURLY FORECAST -->
+    <section id="hourlyWrap" class="hidden">
+      <h2 style="color:white;">⏰ Hourly Forecast</h2>
+      <div id="hourly" class="hourly-grid"></div>
+    </section>
+
+    <!-- DAILY FORECAST -->
+    <section id="forecast" class="hidden">
+      <h2 style="color:white;">📅 5-Day Forecast</h2>
+      <div id="forecastGrid" class="forecast-grid"></div>
+    </section>
+
+    <!-- EXTRA STATS -->
+    <section id="extraStats" class="hidden card">
+      <h2>📊 Additional Weather Stats</h2>
+      <ul>
+        <li>🌡 Min/Max Temp</li>
+        <li>🌍 Geographic Coordinates</li>
+        <li>🌀 Wind Direction</li>
+        <li>☁ Cloud Coverage</li>
+      </ul>
+    </section>
+<!-- Weather Highlights -->
+<div class="highlights">
+  <div class="highlight-card">
+    <div class="highlight-icon">🌅</div>
+    <h4>Sunrise</h4>
+    <p id="sunrise">06:12 AM</p>
+  </div>
+  <div class="highlight-card">
+    <div class="highlight-icon">🌇</div>
+    <h4>Sunset</h4>
+    <p id="sunset">06:45 PM</p>
+  </div>
+  <div class="highlight-card">
+    <div class="highlight-icon">👁️</div>
+    <h4>Visibility</h4>
+    <p id="visibility">10 km</p>
+  </div>
+  <div class="highlight-card">
+    <div class="highlight-icon">💨</div>
+    <h4>Air Quality</h4>
+    <p id="air-quality">Good</p>
+  </div>
+</div>
+
+
+
+<!-- Tips / Fun Fact -->
+<div class="tips">
+  🌂 Don’t forget your umbrella if you’re going out today!
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>Weather data powered by OpenWeatherMap • Designed with ❤️</p>
+</footer>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a> | Designed with ❤️</p>
+    </footer>
+
+  </div>
+</body>
+</html>
